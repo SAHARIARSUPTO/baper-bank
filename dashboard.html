@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baper Bank</title>
+    <link rel="stylesheet" href="style.css">
+
+      <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+
+
+<body class="h-14 bg-gradient-to-r from-cyan-500 to-blue-500">
+    
+<p class="text-6xl font-bold text-slate-600 text-center  pt-12"> Welcome to <span class="text-6xl font-bold text-rose-500 text-center">Baper Bank</span><br>Get Some Money Sunny!!</p>
+
+<section class="mt-12">
+<div class=" grid grid-cols-3 gap-4 w-9/12 mx-auto ">
+
+
+    <div class="bg-emerald-400 p-8 rounded-xl mt-5 shadow-2xl">
+        <p class='text-2xl text-white'>Deposit</p>
+        <p class='text-6xl text-white'><span id="deposit-total">00</span>BDT</p> </div>
+
+
+    <div class="bg-rose-400 p-8 rounded-xl mt-5 shadow-2xl">
+        <p class='text-2xl text-white'>Withdraw</p>
+        <p class='text-6xl text-white'><span id="withdraw-total">00</span>BDT</p> </div>
+
+
+    <div class="bg-violet-400 p-8 rounded-xl mt-5 shadow-2xl">
+        <p class='text-2xl text-white'>Balance</p>
+        <p class='text-6xl text-white'><span id="balance-total">1500</span>BDT</p> 
+    </div>
+
+</div>
+
+<div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+
+
+    <div class="bg-slate-500 p-8 rounded-xl mt-5 shadow-2xl">
+        <p class='text-xl font-bold text-white'>Deposit</p>
+        <input id="deposit-amount" class="text-center w-9/12 block mt-2 rounded-md" type="" placeholder="Enter the amount"><br>
+        <button id="btn-deposit" class="bg-violet-300  hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <span>Deposit</span>
+          </button>
+    </div>
+
+    <div class="bg-pink-500 p-8 rounded-xl mt-5 shadow-2xl"> 
+        <p class='text-xl font-bold  text-white'>Withdraw</p>
+        <input id="withdraw-amount" class="text-center w-9/12 block mt-2 rounded-md" type="" placeholder="Enter the amount"><br>
+        <button id="btn-withdraw" class="bg-violet-300  hover:bg-yellow-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+            <span>Withdraw</span>
+          </button>
+</div>
+
+
+
+</section>
+
+<script src="dashboard-script.js"></script>
+<script src="withdraw-script.js"></script>
+</body>
+</html>
